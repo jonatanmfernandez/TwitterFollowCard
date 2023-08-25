@@ -56,7 +56,7 @@ function App() {
       <section className="App">
       {sortedTwitterUsers.map((user, index) => (
         <TwitterFollowCard
-          key={index} //tiene que ser un identificador unico
+          key={index} //tiene que ser un identificador unico, (mejor id de base de datos)
           formattedUserName={<span>@{user.userName}</span>}
           isFollowing={user.isFollowing}
           userName={user.userName}
