@@ -52,24 +52,51 @@ h1 {
 }*/
 
 button {
-  color: white;
+  color: rgb(8, 7, 7);
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid white;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fffcfc;
   cursor: pointer;
   transition: border-color 0.25s;
+  box-sizing: border-box;
+  text-decoration: none;
+  cursor: default;
 }
-button:hover {
-  border-color: #646cff;
-}
+/* button:hover {
+  color: red;
+  border-color: #9d3232aa;
+  background-color: rgba(251, 7, 7, 0.033);
+
+} */
 
 .button.is-following {
-  border: 1px solid rgb(252, 66, 66);
-  background-color: rgb(252, 66, 66);
+  color: rgb(252, 250, 250);
+  border: 1px solid rgba(242, 238, 238, 0.158);
+  background-color: rgba(254, 254, 254, 0);
+  width: 100px;
+}
+
+.button.is-following:hover {
+  color: red;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.068);
+  transition: .3s ease all;
+}
+
+.button.is-following:hover .tw-followCard-unFollow {
+  display: block;
+}
+
+.tw-followCard-unFollow {
+  display:none;
+}
+
+.button.is-following:hover .tw-followCard-text{
+  display: none;
 }
 
 button:focus,

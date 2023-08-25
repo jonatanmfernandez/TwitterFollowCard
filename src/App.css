@@ -61,6 +61,9 @@ body {
   /* filter: drop-shadow(0 0 1.5em #1397bbaa */
 }
 
+.tw-followCard-unFollow:hover {
+  border: 1px solid rgb(253, 251, 251);
+}
 
 /* .tw-followCard-button {
   margin-left: 16px;

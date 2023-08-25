@@ -29,6 +29,7 @@
 import './App.css'
 import TwitterFollowCard from './components/TwitterFollowCard'
 
+
 function App() {
   const twitterUsers = [
     { userName: 'BarackObama', name: 'Barack Obama', isFollowing: false },
@@ -55,7 +56,7 @@ function App() {
       <section className="App">
       {sortedTwitterUsers.map((user, index) => (
         <TwitterFollowCard
-          key={index}
+          key={index} //tiene que ser un identificador unico
           formattedUserName={<span>@{user.userName}</span>}
           isFollowing={user.isFollowing}
           userName={user.userName}
